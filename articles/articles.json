@@ -1,0 +1,12 @@
+[
+  {
+    "slug": "mshta-abuse",
+    "title": "MSHTA Abuse — Threat Hunting",
+    "category": "detection",
+    "date": "2025-05-21",
+    "excerpt": "Article in progress.",
+    "tags": ["MSHTA", "LOLBins", "Splunk", "SentinelOne"],
+    "readtime": "? min",
+    "tldr": ""
+  }
+]

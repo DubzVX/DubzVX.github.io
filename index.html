@@ -22,6 +22,7 @@
     </div>
     <ul class="nav-links">
       <li><a href="#about">// About</a></li>
+      <li><a href="blog.html">// Articles</a></li>
       <li><a href="#contact">// Contact</a></li>
     </ul>
     <button class="nav-toggle" aria-label="Mobile menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
@@ -46,8 +47,11 @@
       </p>
       <p class="hero-quote">"Cyber Cowboy From France"</p>
       <div class="hero-cta">
-        <a href="#about" class="btn btn-primary">
+        <a href="#about" class="btn btn-primary" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'}); return false;">
           <span class="btn-arrow">&gt;&gt;</span> ABOUT ME
+        </a>
+        <a href="#contact" class="btn btn-ghost" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'}); return false;">
+          <span class="btn-arrow">&gt;&gt;</span> GET IN TOUCH
         </a>
       </div>
     </div>
@@ -103,7 +107,26 @@
             I publish my research, detection rules, and playbooks as open-source to contribute to the defensive security community.
           </p>
         </div>
-       
+        <div class="about-mitre">
+          <h3 class="mitre-title">ATT&amp;CK COVERAGE</h3>
+          <div class="mitre-grid">
+            <div class="mitre-tactic active">Initial Access</div>
+            <div class="mitre-tactic active">Execution</div>
+            <div class="mitre-tactic active">Persistence</div>
+            <div class="mitre-tactic active">Priv. Escalation</div>
+            <div class="mitre-tactic active">Defense Evasion</div>
+            <div class="mitre-tactic active">Credential Access</div>
+            <div class="mitre-tactic partial">Discovery</div>
+            <div class="mitre-tactic partial">Lateral Movement</div>
+            <div class="mitre-tactic partial">Collection</div>
+            <div class="mitre-tactic active">C2</div>
+            <div class="mitre-tactic partial">Exfiltration</div>
+            <div class="mitre-tactic partial">Impact</div>
+          </div>
+          <div class="mitre-legend">
+            <span class="legend-item"><span class="legend-dot active"></span> Full coverage</span>
+            <span class="legend-item"><span class="legend-dot partial"></span> In progress</span>
+          </div>
         </div>
       </div>
     </div>
@@ -113,12 +136,12 @@
     <div class="container">
       <div class="section-header">
         <span class="section-tag">02</span>
-
+        <h2 class="section-title">GET IN <span class="accent">TOUCH</span></h2>
         <div class="section-line"></div>
       </div>
       <div class="contact-solo">
-        <p class="contact-lead">Found on my Social Networks : </p>
-    
+        <p class="contact-lead">Available for <span class="highlight">threat hunting</span> missions, detection audits, or research collaborations.</p>
+        <p style="color:var(--text-muted); font-family:var(--font-mono); font-size:0.85rem;">Response within 24h.</p>
         <div class="contact-links">
           <a href="https://github.com/DubzVX" class="contact-link" target="_blank" rel="noopener">
             <span class="cl-icon">GH</span>
