@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ThreatHunter // Portfolio</title>
+  <title>DubzVX // Lead Threat Hunter</title>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎯</text></svg>" />
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -12,53 +12,48 @@
 </head>
 <body>
 
-  <!-- SCAN LINE OVERLAY -->
   <div class="scanlines" aria-hidden="true"></div>
 
-  <!-- NAV -->
-  <nav class="nav" role="navigation" aria-label="Navigation principale">
+  <nav class="nav" role="navigation" aria-label="Main navigation">
     <div class="nav-logo">
       <span class="nav-bracket">[</span>
-      <span class="nav-title">THREAT<span class="accent">HUNTER</span></span>
+      <span class="nav-title">DUBZ<span class="accent">VX</span></span>
       <span class="nav-bracket">]</span>
     </div>
     <ul class="nav-links">
-      <li><a href="#about">// À propos</a></li>
-      <li><a href="#projects">// Projets</a></li>
+      <li><a href="#about">// About</a></li>
+      <li><a href="#projects">// Projects</a></li>
       <li><a href="#skills">// Arsenal</a></li>
       <li><a href="blog.html">// Articles</a></li>
       <li><a href="#contact">// Contact</a></li>
     </ul>
-    <button class="nav-toggle" aria-label="Menu mobile" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+    <button class="nav-toggle" aria-label="Mobile menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
       <span></span><span></span><span></span>
     </button>
   </nav>
 
-  <!-- HERO -->
   <header class="hero" role="banner">
     <div class="hero-grid" aria-hidden="true"></div>
     <div class="hero-content">
       <div class="hero-status">
         <span class="status-dot"></span>
-        <span class="status-text">SYSTÈME ACTIF // MENACES SURVEILLÉES</span>
+        <span class="status-text">SYSTEM ACTIVE // THREATS MONITORED</span>
       </div>
-      <h1 class="hero-name" id="typed-name">
-        <!-- filled by JS -->
-      </h1>
+      <h1 class="hero-name" id="typed-name"></h1>
       <p class="hero-role">
-        <span class="role-line">THREAT HUNTER</span>
+        <span class="role-line">LEAD THREAT HUNTER</span>
         <span class="role-sep"> / </span>
-        <span class="role-line">ANALYSTE SOC</span>
+        <span class="role-line">SPLUNK</span>
         <span class="role-sep"> / </span>
-        <span class="role-line">DFIR</span>
+        <span class="role-line">SENTINELONE</span>
       </p>
-      <p class="hero-quote">"Chassez les menaces avant qu'elles ne vous trouvent."</p>
+      <p class="hero-quote">"Cyber Cowboy From France"</p>
       <div class="hero-cta">
         <a href="#projects" class="btn btn-primary">
-          <span class="btn-arrow">&gt;&gt;</span> VOIR LES PROJETS
+          <span class="btn-arrow">&gt;&gt;</span> VIEW PROJECTS
         </a>
-        <a href="resume.pdf" class="btn btn-ghost" target="_blank">
-          <span class="btn-arrow">&gt;&gt;</span> TÉLÉCHARGER CV
+        <a href="#contact" class="btn btn-ghost">
+          <span class="btn-arrow">&gt;&gt;</span> GET IN TOUCH
         </a>
       </div>
     </div>
@@ -73,57 +68,49 @@
     </div>
   </header>
 
-  <!-- STATS BANNER -->
-  <section class="stats-banner" aria-label="Statistiques clés">
+  <section class="stats-banner" aria-label="Key stats">
     <div class="stat-item">
-      <span class="stat-num">42+</span>
-      <span class="stat-label">MENACES DÉTECTÉES</span>
+      <span class="stat-num">SPLUNK</span>
+      <span class="stat-label">PRIMARY SIEM</span>
     </div>
     <div class="stat-sep" aria-hidden="true">|</div>
     <div class="stat-item">
-      <span class="stat-num">15+</span>
-      <span class="stat-label">PROJETS PUBLICS</span>
-    </div>
-    <div class="stat-sep" aria-hidden="true">|</div>
-    <div class="stat-item">
-      <span class="stat-num">3+</span>
-      <span class="stat-label">ANS D'EXPÉRIENCE</span>
+      <span class="stat-num">S1</span>
+      <span class="stat-label">SENTINELONE EDR</span>
     </div>
     <div class="stat-sep" aria-hidden="true">|</div>
     <div class="stat-item">
       <span class="stat-num">MITRE</span>
-      <span class="stat-label">ATT&amp;CK CONTRIBUTOR</span>
+      <span class="stat-label">ATT&amp;CK DRIVEN</span>
+    </div>
+    <div class="stat-sep" aria-hidden="true">|</div>
+    <div class="stat-item">
+      <span class="stat-num">🇫🇷</span>
+      <span class="stat-label">BASED IN FRANCE</span>
     </div>
   </section>
 
-  <!-- ABOUT -->
   <section class="section" id="about">
     <div class="container">
       <div class="section-header">
         <span class="section-tag">01</span>
-        <h2 class="section-title">À <span class="accent">PROPOS</span></h2>
+        <h2 class="section-title">ABOUT <span class="accent">ME</span></h2>
         <div class="section-line"></div>
       </div>
       <div class="about-grid">
         <div class="about-text">
           <p class="about-lead">
-            Spécialiste en <span class="highlight">threat hunting proactif</span>, je traque les adversaires avancés avant qu'ils ne causent des dommages critiques.
+            <span class="highlight">Lead Threat Hunter</span> focused on proactively tracking advanced adversaries before they cause critical damage.
           </p>
           <p>
-            Mon approche combine l'analyse comportementale, l'intelligence sur les menaces (CTI) et l'automatisation pour débusquer les APTs et les techniques d'évasion sophistiquées dans les environnements enterprise.
+            My approach combines behavioral analysis, cyber threat intelligence (CTI), and automation to uncover APTs and sophisticated evasion techniques in enterprise environments — primarily using <span class="highlight">Splunk</span> and <span class="highlight">SentinelOne</span>.
           </p>
           <p>
-            Je publie mes recherches, règles de détection et playbooks en open-source pour contribuer à la communauté défensive.
+            I publish my research, detection rules, and playbooks as open-source to contribute to the defensive security community.
           </p>
-          <div class="cert-grid">
-            <div class="cert-badge">GCIA</div>
-            <div class="cert-badge">GCTI</div>
-            <div class="cert-badge">GREM</div>
-            <div class="cert-badge">OSCP</div>
-          </div>
         </div>
         <div class="about-mitre">
-          <h3 class="mitre-title">COUVERTURE ATT&amp;CK</h3>
+          <h3 class="mitre-title">ATT&amp;CK COVERAGE</h3>
           <div class="mitre-grid">
             <div class="mitre-tactic active">Initial Access</div>
             <div class="mitre-tactic active">Execution</div>
@@ -139,79 +126,64 @@
             <div class="mitre-tactic partial">Impact</div>
           </div>
           <div class="mitre-legend">
-            <span class="legend-item"><span class="legend-dot active"></span> Couverture complète</span>
-            <span class="legend-item"><span class="legend-dot partial"></span> En cours</span>
+            <span class="legend-item"><span class="legend-dot active"></span> Full coverage</span>
+            <span class="legend-item"><span class="legend-dot partial"></span> In progress</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- PROJECTS -->
   <section class="section section-dark" id="projects">
     <div class="container">
       <div class="section-header">
         <span class="section-tag">02</span>
-        <h2 class="section-title">PROJETS <span class="accent">HUNT</span></h2>
+        <h2 class="section-title">HUNT <span class="accent">PROJECTS</span></h2>
         <div class="section-line"></div>
       </div>
-
-      <div class="filter-bar" role="group" aria-label="Filtrer les projets">
-        <button class="filter-btn active" data-filter="all">TOUS</button>
-        <button class="filter-btn" data-filter="detection">DÉTECTION</button>
+      <div class="filter-bar" role="group" aria-label="Filter projects">
+        <button class="filter-btn active" data-filter="all">ALL</button>
+        <button class="filter-btn" data-filter="detection">DETECTION</button>
         <button class="filter-btn" data-filter="forensics">FORENSICS</button>
         <button class="filter-btn" data-filter="intel">THREAT INTEL</button>
-        <button class="filter-btn" data-filter="tool">OUTILS</button>
+        <button class="filter-btn" data-filter="tool">TOOLS</button>
       </div>
-
       <div class="projects-grid" id="projects-grid">
 
         <article class="project-card" data-category="detection" tabindex="0">
           <div class="card-header">
-            <span class="card-tag detection">DÉTECTION</span>
-            <span class="card-severity critical">CRITIQUE</span>
+            <span class="card-tag detection">DETECTION</span>
+            <span class="card-severity critical">CRITICAL</span>
           </div>
           <h3 class="card-title">APT Lateral Movement Detector</h3>
-          <p class="card-desc">Ensemble de règles Sigma et requêtes KQL pour détecter les mouvements latéraux furtifs via WMI, DCOM et Pass-the-Hash dans les environnements AD.</p>
+          <p class="card-desc">Sigma rules and Splunk SPL queries to detect stealthy lateral movement via WMI, DCOM and Pass-the-Hash in Active Directory environments.</p>
           <div class="card-stack">
             <span class="stack-tag">Sigma</span>
-            <span class="stack-tag">KQL</span>
+            <span class="stack-tag">Splunk SPL</span>
             <span class="stack-tag">Sysmon</span>
             <span class="stack-tag">Active Directory</span>
           </div>
           <div class="card-footer">
-            <div class="card-meta">
-              <span class="meta-icon">⚡</span> 37 règles
-              <span class="meta-sep">·</span>
-              <span class="meta-icon">★</span> 142
-            </div>
-            <a href="https://github.com/votreusername/apt-lateral-detector" class="card-link" target="_blank" rel="noopener">
-              GITHUB →
-            </a>
+            <div class="card-meta"><span class="meta-icon">⚡</span> 37 rules</div>
+            <a href="https://github.com/DubzVX" class="card-link" target="_blank" rel="noopener">GITHUB →</a>
           </div>
         </article>
 
-        <article class="project-card" data-category="forensics" tabindex="0">
+        <article class="project-card" data-category="detection" tabindex="0">
           <div class="card-header">
-            <span class="card-tag forensics">FORENSICS</span>
+            <span class="card-tag detection">DETECTION</span>
             <span class="card-severity high">HIGH</span>
           </div>
-          <h3 class="card-title">Volatility3 Hunt Plugin</h3>
-          <p class="card-desc">Plugin Volatility3 pour analyser les artefacts mémoire liés aux implants Cobalt Strike et autres C2 frameworks via pattern matching et heuristiques comportementales.</p>
+          <h3 class="card-title">SentinelOne Hunt Queries</h3>
+          <p class="card-desc">Collection of SentinelOne Deep Visibility queries for hunting common TTPs: process injection, credential dumping, and C2 beaconing patterns.</p>
           <div class="card-stack">
-            <span class="stack-tag">Python</span>
-            <span class="stack-tag">Volatility3</span>
-            <span class="stack-tag">Cobalt Strike</span>
+            <span class="stack-tag">SentinelOne</span>
+            <span class="stack-tag">Deep Visibility</span>
+            <span class="stack-tag">MITRE ATT&CK</span>
           </div>
           <div class="card-footer">
-            <div class="card-meta">
-              <span class="meta-icon">⚡</span> v2.1.0
-              <span class="meta-sep">·</span>
-              <span class="meta-icon">★</span> 89
-            </div>
-            <a href="https://github.com/votreusername/vol3-hunt-plugin" class="card-link" target="_blank" rel="noopener">
-              GITHUB →
-            </a>
+            <div class="card-meta"><span class="meta-icon">⚡</span> 50+ queries</div>
+            <a href="https://github.com/DubzVX" class="card-link" target="_blank" rel="noopener">GITHUB →</a>
           </div>
         </article>
 
@@ -221,97 +193,73 @@
             <span class="card-severity high">HIGH</span>
           </div>
           <h3 class="card-title">IOC Enrichment Pipeline</h3>
-          <p class="card-desc">Pipeline automatisé pour enrichir les IOCs avec VirusTotal, Shodan, MISP et AbuseIPDB. Génère des rapports structurés STIX 2.1 pour partage communautaire.</p>
+          <p class="card-desc">Automated pipeline to enrich IOCs with VirusTotal, Shodan, and AbuseIPDB. Generates structured STIX 2.1 reports for community sharing.</p>
           <div class="card-stack">
             <span class="stack-tag">Python</span>
             <span class="stack-tag">STIX 2.1</span>
-            <span class="stack-tag">MISP</span>
+            <span class="stack-tag">VirusTotal</span>
             <span class="stack-tag">Docker</span>
           </div>
           <div class="card-footer">
-            <div class="card-meta">
-              <span class="meta-icon">⚡</span> 5K+ IOCs
-              <span class="meta-sep">·</span>
-              <span class="meta-icon">★</span> 203
-            </div>
-            <a href="https://github.com/votreusername/ioc-pipeline" class="card-link" target="_blank" rel="noopener">
-              GITHUB →
-            </a>
+            <div class="card-meta"><span class="meta-icon">⚡</span> 5K+ IOCs</div>
+            <a href="https://github.com/DubzVX" class="card-link" target="_blank" rel="noopener">GITHUB →</a>
           </div>
         </article>
 
         <article class="project-card" data-category="detection" tabindex="0">
           <div class="card-header">
-            <span class="card-tag detection">DÉTECTION</span>
+            <span class="card-tag detection">DETECTION</span>
             <span class="card-severity medium">MEDIUM</span>
           </div>
           <h3 class="card-title">LOLBAS Hunt Playbook</h3>
-          <p class="card-desc">Playbook complet pour chasser l'abus de binaires légitimes Windows (LOLBAS). Inclut des requêtes SPL/KQL, hypothèses de hunt et guides d'investigation.</p>
+          <p class="card-desc">Complete playbook for hunting Living-off-the-Land binaries abuse. Includes Splunk SPL queries, hunt hypotheses, and investigation guides.</p>
           <div class="card-stack">
-            <span class="stack-tag">SPL</span>
-            <span class="stack-tag">Splunk</span>
+            <span class="stack-tag">Splunk SPL</span>
             <span class="stack-tag">LOLBAS</span>
             <span class="stack-tag">Windows</span>
+            <span class="stack-tag">PowerShell</span>
           </div>
           <div class="card-footer">
-            <div class="card-meta">
-              <span class="meta-icon">⚡</span> 28 playbooks
-              <span class="meta-sep">·</span>
-              <span class="meta-icon">★</span> 167
-            </div>
-            <a href="https://github.com/votreusername/lolbas-hunt" class="card-link" target="_blank" rel="noopener">
-              GITHUB →
-            </a>
-          </div>
-        </article>
-
-        <article class="project-card" data-category="tool" tabindex="0">
-          <div class="card-header">
-            <span class="card-tag tool">OUTIL</span>
-            <span class="card-severity medium">MEDIUM</span>
-          </div>
-          <h3 class="card-title">SigmaForge CLI</h3>
-          <p class="card-desc">Outil CLI pour convertir, valider et déployer des règles Sigma vers Elastic SIEM, Splunk et Microsoft Sentinel en un seul pipeline CI/CD.</p>
-          <div class="card-stack">
-            <span class="stack-tag">Go</span>
-            <span class="stack-tag">Sigma</span>
-            <span class="stack-tag">CI/CD</span>
-            <span class="stack-tag">Elastic</span>
-          </div>
-          <div class="card-footer">
-            <div class="card-meta">
-              <span class="meta-icon">⚡</span> CLI v1.3
-              <span class="meta-sep">·</span>
-              <span class="meta-icon">★</span> 94
-            </div>
-            <a href="https://github.com/votreusername/sigmaforge" class="card-link" target="_blank" rel="noopener">
-              GITHUB →
-            </a>
+            <div class="card-meta"><span class="meta-icon">⚡</span> 28 playbooks</div>
+            <a href="https://github.com/DubzVX" class="card-link" target="_blank" rel="noopener">GITHUB →</a>
           </div>
         </article>
 
         <article class="project-card" data-category="forensics" tabindex="0">
           <div class="card-header">
             <span class="card-tag forensics">FORENSICS</span>
-            <span class="card-severity critical">CRITIQUE</span>
+            <span class="card-severity critical">CRITICAL</span>
           </div>
           <h3 class="card-title">Ransomware Family Tracker</h3>
-          <p class="card-desc">Base de données et outil de classification des familles ransomware basés sur les artefacts laissés sur le système de fichiers, les mutex et les patterns réseau.</p>
+          <p class="card-desc">Database and classification tool for ransomware families based on filesystem artifacts, mutexes, and network patterns. Integrated with SentinelOne telemetry.</p>
           <div class="card-stack">
             <span class="stack-tag">Python</span>
             <span class="stack-tag">YARA</span>
-            <span class="stack-tag">Ransomware</span>
+            <span class="stack-tag">SentinelOne</span>
             <span class="stack-tag">SQLite</span>
           </div>
           <div class="card-footer">
-            <div class="card-meta">
-              <span class="meta-icon">⚡</span> 120+ familles
-              <span class="meta-sep">·</span>
-              <span class="meta-icon">★</span> 318
-            </div>
-            <a href="https://github.com/votreusername/ransomware-tracker" class="card-link" target="_blank" rel="noopener">
-              GITHUB →
-            </a>
+            <div class="card-meta"><span class="meta-icon">⚡</span> 120+ families</div>
+            <a href="https://github.com/DubzVX" class="card-link" target="_blank" rel="noopener">GITHUB →</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="tool" tabindex="0">
+          <div class="card-header">
+            <span class="card-tag tool">TOOL</span>
+            <span class="card-severity medium">MEDIUM</span>
+          </div>
+          <h3 class="card-title">Splunk Detection Framework</h3>
+          <p class="card-desc">CI/CD pipeline to validate, test and deploy Sigma rules directly into Splunk Enterprise Security. Automated false-positive tuning and coverage reporting.</p>
+          <div class="card-stack">
+            <span class="stack-tag">Python</span>
+            <span class="stack-tag">Splunk ES</span>
+            <span class="stack-tag">Sigma</span>
+            <span class="stack-tag">CI/CD</span>
+          </div>
+          <div class="card-footer">
+            <div class="card-meta"><span class="meta-icon">⚡</span> v1.0</div>
+            <a href="https://github.com/DubzVX" class="card-link" target="_blank" rel="noopener">GITHUB →</a>
           </div>
         </article>
 
@@ -319,57 +267,56 @@
     </div>
   </section>
 
-  <!-- SKILLS -->
   <section class="section" id="skills">
     <div class="container">
       <div class="section-header">
         <span class="section-tag">03</span>
-        <h2 class="section-title">ARSENAL <span class="accent">TECHNIQUE</span></h2>
+        <h2 class="section-title">TECHNICAL <span class="accent">ARSENAL</span></h2>
         <div class="section-line"></div>
       </div>
       <div class="skills-grid">
 
         <div class="skill-category">
-          <h3 class="skill-cat-title">// DÉTECTION & HUNT</h3>
+          <h3 class="skill-cat-title">// DETECTION & HUNT</h3>
           <div class="skill-list">
-            <div class="skill-item"><span class="skill-name">Sigma Rules</span><div class="skill-bar"><div class="skill-fill" style="--w:95%"></div></div></div>
-            <div class="skill-item"><span class="skill-name">MITRE ATT&CK</span><div class="skill-bar"><div class="skill-fill" style="--w:90%"></div></div></div>
-            <div class="skill-item"><span class="skill-name">Splunk SPL</span><div class="skill-bar"><div class="skill-fill" style="--w:88%"></div></div></div>
-            <div class="skill-item"><span class="skill-name">KQL / Sentinel</span><div class="skill-bar"><div class="skill-fill" style="--w:82%"></div></div></div>
-            <div class="skill-item"><span class="skill-name">Elastic EQL</span><div class="skill-bar"><div class="skill-fill" style="--w:78%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Splunk SPL</span><div class="skill-bar"><div class="skill-fill" style="--w:95%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">SentinelOne</span><div class="skill-bar"><div class="skill-fill" style="--w:92%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Sigma Rules</span><div class="skill-bar"><div class="skill-fill" style="--w:90%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">MITRE ATT&CK</span><div class="skill-bar"><div class="skill-fill" style="--w:88%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">KQL / Sentinel</span><div class="skill-bar"><div class="skill-fill" style="--w:72%"></div></div></div>
           </div>
         </div>
 
         <div class="skill-category">
           <h3 class="skill-cat-title">// FORENSICS & MALWARE</h3>
           <div class="skill-list">
-            <div class="skill-item"><span class="skill-name">Volatility3</span><div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div></div>
             <div class="skill-item"><span class="skill-name">YARA</span><div class="skill-bar"><div class="skill-fill" style="--w:87%"></div></div></div>
-            <div class="skill-item"><span class="skill-name">Ghidra / IDA</span><div class="skill-bar"><div class="skill-fill" style="--w:70%"></div></div></div>
-            <div class="skill-item"><span class="skill-name">Wireshark</span><div class="skill-bar"><div class="skill-fill" style="--w:90%"></div></div></div>
-            <div class="skill-item"><span class="skill-name">Sysmon Config</span><div class="skill-bar"><div class="skill-fill" style="--w:92%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Volatility3</span><div class="skill-bar"><div class="skill-fill" style="--w:82%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Wireshark</span><div class="skill-bar"><div class="skill-fill" style="--w:88%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Ghidra</span><div class="skill-bar"><div class="skill-fill" style="--w:65%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Sysmon</span><div class="skill-bar"><div class="skill-fill" style="--w:90%"></div></div></div>
           </div>
         </div>
 
         <div class="skill-category">
-          <h3 class="skill-cat-title">// LANGAGES & INFRA</h3>
+          <h3 class="skill-cat-title">// LANGUAGES & INFRA</h3>
           <div class="skill-list">
-            <div class="skill-item"><span class="skill-name">Python</span><div class="skill-bar"><div class="skill-fill" style="--w:90%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Python</span><div class="skill-bar"><div class="skill-fill" style="--w:88%"></div></div></div>
             <div class="skill-item"><span class="skill-name">PowerShell</span><div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div></div>
             <div class="skill-item"><span class="skill-name">Bash / Linux</span><div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div></div>
-            <div class="skill-item"><span class="skill-name">Docker / K8s</span><div class="skill-bar"><div class="skill-fill" style="--w:72%"></div></div></div>
-            <div class="skill-item"><span class="skill-name">Go</span><div class="skill-bar"><div class="skill-fill" style="--w:60%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Docker</span><div class="skill-bar"><div class="skill-fill" style="--w:70%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Git</span><div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div></div>
           </div>
         </div>
 
         <div class="skill-category">
           <h3 class="skill-cat-title">// THREAT INTEL</h3>
           <div class="skill-list">
-            <div class="skill-item"><span class="skill-name">MISP</span><div class="skill-bar"><div class="skill-fill" style="--w:88%"></div></div></div>
-            <div class="skill-item"><span class="skill-name">STIX / TAXII</span><div class="skill-bar"><div class="skill-fill" style="--w:82%"></div></div></div>
-            <div class="skill-item"><span class="skill-name">OpenCTI</span><div class="skill-bar"><div class="skill-fill" style="--w:75%"></div></div></div>
             <div class="skill-item"><span class="skill-name">VirusTotal API</span><div class="skill-bar"><div class="skill-fill" style="--w:90%"></div></div></div>
-            <div class="skill-item"><span class="skill-name">Shodan</span><div class="skill-bar"><div class="skill-fill" style="--w:78%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">MISP</span><div class="skill-bar"><div class="skill-fill" style="--w:82%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">STIX / TAXII</span><div class="skill-bar"><div class="skill-fill" style="--w:78%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Shodan</span><div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">OpenCTI</span><div class="skill-bar"><div class="skill-fill" style="--w:70%"></div></div></div>
           </div>
         </div>
 
@@ -377,64 +324,38 @@
     </div>
   </section>
 
-  <!-- CONTACT -->
   <section class="section section-dark" id="contact">
     <div class="container">
       <div class="section-header">
         <span class="section-tag">04</span>
-        <h2 class="section-title">ÉTABLIR <span class="accent">CONTACT</span></h2>
+        <h2 class="section-title">GET IN <span class="accent">TOUCH</span></h2>
         <div class="section-line"></div>
       </div>
-      <div class="contact-grid">
-        <div class="contact-text">
-          <p class="contact-lead">Disponible pour des missions de <span class="highlight">threat hunting</span>, des audits de détection ou des collaborations de recherche.</p>
-          <p>Réponse sous 24h. Chiffrement PGP disponible.</p>
-          <div class="contact-links">
-            <a href="https://github.com/votreusername" class="contact-link" target="_blank" rel="noopener">
-              <span class="cl-icon">GH</span>
-              <span>github.com/votreusername</span>
-            </a>
-            <a href="https://www.linkedin.com/in/votreusername" class="contact-link" target="_blank" rel="noopener">
-              <span class="cl-icon">LI</span>
-              <span>linkedin.com/in/votreusername</span>
-            </a>
-            <a href="https://twitter.com/votreusername" class="contact-link" target="_blank" rel="noopener">
-              <span class="cl-icon">TW</span>
-              <span>@votreusername</span>
-            </a>
-            <a href="mailto:contact@votreusername.io" class="contact-link">
-              <span class="cl-icon">@</span>
-              <span>contact@votreusername.io</span>
-            </a>
-          </div>
-        </div>
-        <div class="contact-terminal" aria-hidden="true">
-          <div class="terminal-header">
-            <span class="t-dot t-red"></span>
-            <span class="t-dot t-yellow"></span>
-            <span class="t-dot t-green"></span>
-            <span class="t-title">secure_channel.sh</span>
-          </div>
-          <div class="terminal-body">
-            <p class="t-line"><span class="t-prompt">$</span> <span class="t-cmd">gpg --import pubkey.asc</span></p>
-            <p class="t-line"><span class="t-output">gpg: key 0xDEADBEEF: public key imported</span></p>
-            <p class="t-line"><span class="t-output">gpg: Total number processed: 1</span></p>
-            <p class="t-line t-blank">&nbsp;</p>
-            <p class="t-line"><span class="t-prompt">$</span> <span class="t-cmd">gpg --encrypt --recipient contact@votreusername.io</span></p>
-            <p class="t-line"><span class="t-output">[OK] Message chiffré. Canal sécurisé établi.</span></p>
-            <p class="t-line t-blank">&nbsp;</p>
-            <p class="t-line"><span class="t-prompt">$</span> <span class="t-cursor">█</span></p>
-          </div>
+      <div class="contact-solo">
+        <p class="contact-lead">Available for <span class="highlight">threat hunting</span> missions, detection audits, or research collaborations.</p>
+        <p style="color:var(--text-muted); font-family:var(--font-mono); font-size:0.85rem;">Response within 24h.</p>
+        <div class="contact-links">
+          <a href="https://github.com/DubzVX" class="contact-link" target="_blank" rel="noopener">
+            <span class="cl-icon">GH</span>
+            <span>github.com/DubzVX</span>
+          </a>
+          <a href="https://www.linkedin.com/in/dubsremi/" class="contact-link" target="_blank" rel="noopener">
+            <span class="cl-icon">LI</span>
+            <span>linkedin.com/in/dubsremi</span>
+          </a>
+          <a href="https://x.com/Dubz_vx" class="contact-link" target="_blank" rel="noopener">
+            <span class="cl-icon">𝕏</span>
+            <span>@Dubz_vx</span>
+          </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-inner">
-      <span class="footer-logo">THREAT<span class="accent">HUNTER</span></span>
-      <span class="footer-copy">// Construit avec ❤️ et du café // Hébergé sur GitHub Pages</span>
+      <span class="footer-logo">DUBZ<span class="accent">VX</span></span>
+      <span class="footer-copy">// Built with ❤️ and coffee // Hosted on GitHub Pages</span>
       <span class="footer-status"><span class="status-dot"></span> ALL SYSTEMS OPERATIONAL</span>
     </div>
   </footer>

@@ -725,3 +725,20 @@ body {
   opacity: 1;
   transform: none;
 }
+
+/* CONTACT SOLO (no terminal) */
+.contact-solo {
+  max-width: 520px;
+}
+.contact-solo .contact-lead {
+  font-size: 1.15rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+.contact-solo .contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}

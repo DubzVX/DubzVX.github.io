@@ -1,0 +1,12 @@
+[
+  {
+    "slug": "apt29-lateral-movement-wmi",
+    "title": "Hunting APT29 TTPs: Lateral Movement via WMI",
+    "category": "writeup",
+    "date": "2024-11-15",
+    "excerpt": "Full investigation of an APT29 campaign exploiting WMI and DCOM for lateral movement in an Active Directory environment. Hunt hypotheses, detection, and Sigma rules.",
+    "tags": ["APT29", "WMI", "Lateral Movement", "Active Directory", "Sigma", "Splunk"],
+    "readtime": "12 min",
+    "tldr": "APT29 uses persistent WMI subscriptions to execute payloads on remote hosts. This post covers the hunt methodology, key artifacts, and resulting detection rules."
+  }
+]
