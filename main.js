@@ -15,20 +15,20 @@ function typeWriter(text, node, delay) {
 window.addEventListener("load", () => setTimeout(() => typeWriter(NAME, el, 90), 400));
 
 const LINES = [
-  { t: "$ initializing threat_scan.sh...",            d: 0,    type: "cmd"  },
-  { t: "$ loading MITRE ATT&CK framework...",         d: 600,  type: "cmd"  },
-  { t: "[OK] 185 techniques loaded — 14 tactics",     d: 1000, type: "ok"   },
-  { t: "$ connecting to Splunk Enterprise...",        d: 1500, type: "cmd"  },
-  { t: "[OK] Splunk ES — 12 data sources active",     d: 1900, type: "ok"   },
-  { t: "$ querying SentinelOne Deep Visibility...",   d: 2400, type: "cmd"  },
-  { t: "[!!] Suspicious process injection — WS-042",  d: 2900, type: "warn" },
-  { t: "[!!] LSASS memory access detected",           d: 3200, type: "warn" },
-  { t: "$ correlating IOCs with threat feeds...",     d: 3700, type: "cmd"  },
-  { t: "[OK] APT29 TTP signature matched",            d: 4100, type: "ok"   },
-  { t: "$ hunt hypothesis confirmed.",                d: 4600, type: "ok"   },
-  { t: "$ generating Sigma rule...",                  d: 5000, type: "cmd"  },
-  { t: "[OK] Rule deployed to Splunk ES.",            d: 5500, type: "ok"   },
-  { t: "$ █",                                         d: 6000, type: "cursor"},
+  { t: "$ initializing threat_scan.sh...",           d: 0,    type: "cmd"  },
+  { t: "$ loading MITRE ATT&CK framework...",        d: 600,  type: "cmd"  },
+  { t: "[OK] 185 techniques loaded — 14 tactics",    d: 1000, type: "ok"   },
+  { t: "$ connecting to Splunk Enterprise...",       d: 1500, type: "cmd"  },
+  { t: "[OK] Splunk ES — 12 data sources active",    d: 1900, type: "ok"   },
+  { t: "$ querying SentinelOne Deep Visibility...",  d: 2400, type: "cmd"  },
+  { t: "[!!] Suspicious process injection — WS-042", d: 2900, type: "warn" },
+  { t: "[!!] LSASS memory access detected",          d: 3200, type: "warn" },
+  { t: "$ correlating IOCs with threat feeds...",    d: 3700, type: "cmd"  },
+  { t: "[OK] APT29 TTP signature matched",           d: 4100, type: "ok"   },
+  { t: "$ hunt hypothesis confirmed.",               d: 4600, type: "ok"   },
+  { t: "$ generating Sigma rule...",                 d: 5000, type: "cmd"  },
+  { t: "[OK] Rule deployed to Splunk ES.",           d: 5500, type: "ok"   },
+  { t: "$ █",                                        d: 6000, type: "cursor"},
 ];
 
 function buildTerminal() {
@@ -49,24 +49,15 @@ function buildTerminal() {
 }
 window.addEventListener("load", buildTerminal);
 
-// Filter
-document.querySelectorAll(".filter-btn").forEach(btn => {
-  btn.addEventListener("click", () => {
-    document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
-    btn.classList.add("active");
-    const f = btn.dataset.filter;
-    document.querySelectorAll(".project-card").forEach(c => {
-      c.classList.toggle("hidden", f !== "all" && c.dataset.category !== f);
-    });
-  });
-});
-
 // Scroll reveal
-const items = document.querySelectorAll(".project-card, .skill-category, .stat-item, .about-grid > *, .contact-solo");
+const items = document.querySelectorAll(".about-grid > *, .stat-item, .contact-solo");
 items.forEach(el => el.classList.add("reveal"));
 const obs = new IntersectionObserver(entries => {
   entries.forEach((e, i) => {
-    if (e.isIntersecting) { setTimeout(() => e.target.classList.add("visible"), i * 80); obs.unobserve(e.target); }
+    if (e.isIntersecting) {
+      setTimeout(() => e.target.classList.add("visible"), i * 80);
+      obs.unobserve(e.target);
+    }
   });
 }, { threshold: 0.1 });
 items.forEach(el => obs.observe(el));
