@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ThreatHunter // Portfolio</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎯</text></svg>" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@300;500;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- SCAN LINE OVERLAY -->
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <nav class="nav" role="navigation" aria-label="Navigation principale">
+    <div class="nav-logo">
+      <span class="nav-bracket">[</span>
+      <span class="nav-title">THREAT<span class="accent">HUNTER</span></span>
+      <span class="nav-bracket">]</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about">// À propos</a></li>
+      <li><a href="#projects">// Projets</a></li>
+      <li><a href="#skills">// Arsenal</a></li>
+      <li><a href="blog.html">// Articles</a></li>
+      <li><a href="#contact">// Contact</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Menu mobile" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero" role="banner">
+    <div class="hero-grid" aria-hidden="true"></div>
+    <div class="hero-content">
+      <div class="hero-status">
+        <span class="status-dot"></span>
+        <span class="status-text">SYSTÈME ACTIF // MENACES SURVEILLÉES</span>
+      </div>
+      <h1 class="hero-name" id="typed-name">
+        <!-- filled by JS -->
+      </h1>
+      <p class="hero-role">
+        <span class="role-line">THREAT HUNTER</span>
+        <span class="role-sep"> / </span>
+        <span class="role-line">ANALYSTE SOC</span>
+        <span class="role-sep"> / </span>
+        <span class="role-line">DFIR</span>
+      </p>
+      <p class="hero-quote">"Chassez les menaces avant qu'elles ne vous trouvent."</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">
+          <span class="btn-arrow">&gt;&gt;</span> VOIR LES PROJETS
+        </a>
+        <a href="resume.pdf" class="btn btn-ghost" target="_blank">
+          <span class="btn-arrow">&gt;&gt;</span> TÉLÉCHARGER CV
+        </a>
+      </div>
+    </div>
+    <div class="hero-terminal" aria-hidden="true">
+      <div class="terminal-header">
+        <span class="t-dot t-red"></span>
+        <span class="t-dot t-yellow"></span>
+        <span class="t-dot t-green"></span>
+        <span class="t-title">threat_scan.sh</span>
+      </div>
+      <div class="terminal-body" id="terminal-output"></div>
+    </div>
+  </header>
+
+  <!-- STATS BANNER -->
+  <section class="stats-banner" aria-label="Statistiques clés">
+    <div class="stat-item">
+      <span class="stat-num">42+</span>
+      <span class="stat-label">MENACES DÉTECTÉES</span>
+    </div>
+    <div class="stat-sep" aria-hidden="true">|</div>
+    <div class="stat-item">
+      <span class="stat-num">15+</span>
+      <span class="stat-label">PROJETS PUBLICS</span>
+    </div>
+    <div class="stat-sep" aria-hidden="true">|</div>
+    <div class="stat-item">
+      <span class="stat-num">3+</span>
+      <span class="stat-label">ANS D'EXPÉRIENCE</span>
+    </div>
+    <div class="stat-sep" aria-hidden="true">|</div>
+    <div class="stat-item">
+      <span class="stat-num">MITRE</span>
+      <span class="stat-label">ATT&amp;CK CONTRIBUTOR</span>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">01</span>
+        <h2 class="section-title">À <span class="accent">PROPOS</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="about-lead">
+            Spécialiste en <span class="highlight">threat hunting proactif</span>, je traque les adversaires avancés avant qu'ils ne causent des dommages critiques.
+          </p>
+          <p>
+            Mon approche combine l'analyse comportementale, l'intelligence sur les menaces (CTI) et l'automatisation pour débusquer les APTs et les techniques d'évasion sophistiquées dans les environnements enterprise.
+          </p>
+          <p>
+            Je publie mes recherches, règles de détection et playbooks en open-source pour contribuer à la communauté défensive.
+          </p>
+          <div class="cert-grid">
+            <div class="cert-badge">GCIA</div>
+            <div class="cert-badge">GCTI</div>
+            <div class="cert-badge">GREM</div>
+            <div class="cert-badge">OSCP</div>
+          </div>
+        </div>
+        <div class="about-mitre">
+          <h3 class="mitre-title">COUVERTURE ATT&amp;CK</h3>
+          <div class="mitre-grid">
+            <div class="mitre-tactic active">Initial Access</div>
+            <div class="mitre-tactic active">Execution</div>
+            <div class="mitre-tactic active">Persistence</div>
+            <div class="mitre-tactic active">Priv. Escalation</div>
+            <div class="mitre-tactic active">Defense Evasion</div>
+            <div class="mitre-tactic active">Credential Access</div>
+            <div class="mitre-tactic partial">Discovery</div>
+            <div class="mitre-tactic partial">Lateral Movement</div>
+            <div class="mitre-tactic partial">Collection</div>
+            <div class="mitre-tactic active">C2</div>
+            <div class="mitre-tactic partial">Exfiltration</div>
+            <div class="mitre-tactic partial">Impact</div>
+          </div>
+          <div class="mitre-legend">
+            <span class="legend-item"><span class="legend-dot active"></span> Couverture complète</span>
+            <span class="legend-item"><span class="legend-dot partial"></span> En cours</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section section-dark" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">02</span>
+        <h2 class="section-title">PROJETS <span class="accent">HUNT</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="filter-bar" role="group" aria-label="Filtrer les projets">
+        <button class="filter-btn active" data-filter="all">TOUS</button>
+        <button class="filter-btn" data-filter="detection">DÉTECTION</button>
+        <button class="filter-btn" data-filter="forensics">FORENSICS</button>
+        <button class="filter-btn" data-filter="intel">THREAT INTEL</button>
+        <button class="filter-btn" data-filter="tool">OUTILS</button>
+      </div>
+
+      <div class="projects-grid" id="projects-grid">
+
+        <article class="project-card" data-category="detection" tabindex="0">
+          <div class="card-header">
+            <span class="card-tag detection">DÉTECTION</span>
+            <span class="card-severity critical">CRITIQUE</span>
+          </div>
+          <h3 class="card-title">APT Lateral Movement Detector</h3>
+          <p class="card-desc">Ensemble de règles Sigma et requêtes KQL pour détecter les mouvements latéraux furtifs via WMI, DCOM et Pass-the-Hash dans les environnements AD.</p>
+          <div class="card-stack">
+            <span class="stack-tag">Sigma</span>
+            <span class="stack-tag">KQL</span>
+            <span class="stack-tag">Sysmon</span>
+            <span class="stack-tag">Active Directory</span>
+          </div>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="meta-icon">⚡</span> 37 règles
+              <span class="meta-sep">·</span>
+              <span class="meta-icon">★</span> 142
+            </div>
+            <a href="https://github.com/votreusername/apt-lateral-detector" class="card-link" target="_blank" rel="noopener">
+              GITHUB →
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="forensics" tabindex="0">
+          <div class="card-header">
+            <span class="card-tag forensics">FORENSICS</span>
+            <span class="card-severity high">HIGH</span>
+          </div>
+          <h3 class="card-title">Volatility3 Hunt Plugin</h3>
+          <p class="card-desc">Plugin Volatility3 pour analyser les artefacts mémoire liés aux implants Cobalt Strike et autres C2 frameworks via pattern matching et heuristiques comportementales.</p>
+          <div class="card-stack">
+            <span class="stack-tag">Python</span>
+            <span class="stack-tag">Volatility3</span>
+            <span class="stack-tag">Cobalt Strike</span>
+          </div>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="meta-icon">⚡</span> v2.1.0
+              <span class="meta-sep">·</span>
+              <span class="meta-icon">★</span> 89
+            </div>
+            <a href="https://github.com/votreusername/vol3-hunt-plugin" class="card-link" target="_blank" rel="noopener">
+              GITHUB →
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="intel" tabindex="0">
+          <div class="card-header">
+            <span class="card-tag intel">THREAT INTEL</span>
+            <span class="card-severity high">HIGH</span>
+          </div>
+          <h3 class="card-title">IOC Enrichment Pipeline</h3>
+          <p class="card-desc">Pipeline automatisé pour enrichir les IOCs avec VirusTotal, Shodan, MISP et AbuseIPDB. Génère des rapports structurés STIX 2.1 pour partage communautaire.</p>
+          <div class="card-stack">
+            <span class="stack-tag">Python</span>
+            <span class="stack-tag">STIX 2.1</span>
+            <span class="stack-tag">MISP</span>
+            <span class="stack-tag">Docker</span>
+          </div>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="meta-icon">⚡</span> 5K+ IOCs
+              <span class="meta-sep">·</span>
+              <span class="meta-icon">★</span> 203
+            </div>
+            <a href="https://github.com/votreusername/ioc-pipeline" class="card-link" target="_blank" rel="noopener">
+              GITHUB →
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="detection" tabindex="0">
+          <div class="card-header">
+            <span class="card-tag detection">DÉTECTION</span>
+            <span class="card-severity medium">MEDIUM</span>
+          </div>
+          <h3 class="card-title">LOLBAS Hunt Playbook</h3>
+          <p class="card-desc">Playbook complet pour chasser l'abus de binaires légitimes Windows (LOLBAS). Inclut des requêtes SPL/KQL, hypothèses de hunt et guides d'investigation.</p>
+          <div class="card-stack">
+            <span class="stack-tag">SPL</span>
+            <span class="stack-tag">Splunk</span>
+            <span class="stack-tag">LOLBAS</span>
+            <span class="stack-tag">Windows</span>
+          </div>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="meta-icon">⚡</span> 28 playbooks
+              <span class="meta-sep">·</span>
+              <span class="meta-icon">★</span> 167
+            </div>
+            <a href="https://github.com/votreusername/lolbas-hunt" class="card-link" target="_blank" rel="noopener">
+              GITHUB →
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="tool" tabindex="0">
+          <div class="card-header">
+            <span class="card-tag tool">OUTIL</span>
+            <span class="card-severity medium">MEDIUM</span>
+          </div>
+          <h3 class="card-title">SigmaForge CLI</h3>
+          <p class="card-desc">Outil CLI pour convertir, valider et déployer des règles Sigma vers Elastic SIEM, Splunk et Microsoft Sentinel en un seul pipeline CI/CD.</p>
+          <div class="card-stack">
+            <span class="stack-tag">Go</span>
+            <span class="stack-tag">Sigma</span>
+            <span class="stack-tag">CI/CD</span>
+            <span class="stack-tag">Elastic</span>
+          </div>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="meta-icon">⚡</span> CLI v1.3
+              <span class="meta-sep">·</span>
+              <span class="meta-icon">★</span> 94
+            </div>
+            <a href="https://github.com/votreusername/sigmaforge" class="card-link" target="_blank" rel="noopener">
+              GITHUB →
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="forensics" tabindex="0">
+          <div class="card-header">
+            <span class="card-tag forensics">FORENSICS</span>
+            <span class="card-severity critical">CRITIQUE</span>
+          </div>
+          <h3 class="card-title">Ransomware Family Tracker</h3>
+          <p class="card-desc">Base de données et outil de classification des familles ransomware basés sur les artefacts laissés sur le système de fichiers, les mutex et les patterns réseau.</p>
+          <div class="card-stack">
+            <span class="stack-tag">Python</span>
+            <span class="stack-tag">YARA</span>
+            <span class="stack-tag">Ransomware</span>
+            <span class="stack-tag">SQLite</span>
+          </div>
+          <div class="card-footer">
+            <div class="card-meta">
+              <span class="meta-icon">⚡</span> 120+ familles
+              <span class="meta-sep">·</span>
+              <span class="meta-icon">★</span> 318
+            </div>
+            <a href="https://github.com/votreusername/ransomware-tracker" class="card-link" target="_blank" rel="noopener">
+              GITHUB →
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">03</span>
+        <h2 class="section-title">ARSENAL <span class="accent">TECHNIQUE</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-category">
+          <h3 class="skill-cat-title">// DÉTECTION & HUNT</h3>
+          <div class="skill-list">
+            <div class="skill-item"><span class="skill-name">Sigma Rules</span><div class="skill-bar"><div class="skill-fill" style="--w:95%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">MITRE ATT&CK</span><div class="skill-bar"><div class="skill-fill" style="--w:90%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Splunk SPL</span><div class="skill-bar"><div class="skill-fill" style="--w:88%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">KQL / Sentinel</span><div class="skill-bar"><div class="skill-fill" style="--w:82%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Elastic EQL</span><div class="skill-bar"><div class="skill-fill" style="--w:78%"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-cat-title">// FORENSICS & MALWARE</h3>
+          <div class="skill-list">
+            <div class="skill-item"><span class="skill-name">Volatility3</span><div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">YARA</span><div class="skill-bar"><div class="skill-fill" style="--w:87%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Ghidra / IDA</span><div class="skill-bar"><div class="skill-fill" style="--w:70%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Wireshark</span><div class="skill-bar"><div class="skill-fill" style="--w:90%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Sysmon Config</span><div class="skill-bar"><div class="skill-fill" style="--w:92%"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-cat-title">// LANGAGES & INFRA</h3>
+          <div class="skill-list">
+            <div class="skill-item"><span class="skill-name">Python</span><div class="skill-bar"><div class="skill-fill" style="--w:90%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">PowerShell</span><div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Bash / Linux</span><div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Docker / K8s</span><div class="skill-bar"><div class="skill-fill" style="--w:72%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Go</span><div class="skill-bar"><div class="skill-fill" style="--w:60%"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-cat-title">// THREAT INTEL</h3>
+          <div class="skill-list">
+            <div class="skill-item"><span class="skill-name">MISP</span><div class="skill-bar"><div class="skill-fill" style="--w:88%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">STIX / TAXII</span><div class="skill-bar"><div class="skill-fill" style="--w:82%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">OpenCTI</span><div class="skill-bar"><div class="skill-fill" style="--w:75%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">VirusTotal API</span><div class="skill-bar"><div class="skill-fill" style="--w:90%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Shodan</span><div class="skill-bar"><div class="skill-fill" style="--w:78%"></div></div></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-dark" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">04</span>
+        <h2 class="section-title">ÉTABLIR <span class="accent">CONTACT</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-text">
+          <p class="contact-lead">Disponible pour des missions de <span class="highlight">threat hunting</span>, des audits de détection ou des collaborations de recherche.</p>
+          <p>Réponse sous 24h. Chiffrement PGP disponible.</p>
+          <div class="contact-links">
+            <a href="https://github.com/votreusername" class="contact-link" target="_blank" rel="noopener">
+              <span class="cl-icon">GH</span>
+              <span>github.com/votreusername</span>
+            </a>
+            <a href="https://www.linkedin.com/in/votreusername" class="contact-link" target="_blank" rel="noopener">
+              <span class="cl-icon">LI</span>
+              <span>linkedin.com/in/votreusername</span>
+            </a>
+            <a href="https://twitter.com/votreusername" class="contact-link" target="_blank" rel="noopener">
+              <span class="cl-icon">TW</span>
+              <span>@votreusername</span>
+            </a>
+            <a href="mailto:contact@votreusername.io" class="contact-link">
+              <span class="cl-icon">@</span>
+              <span>contact@votreusername.io</span>
+            </a>
+          </div>
+        </div>
+        <div class="contact-terminal" aria-hidden="true">
+          <div class="terminal-header">
+            <span class="t-dot t-red"></span>
+            <span class="t-dot t-yellow"></span>
+            <span class="t-dot t-green"></span>
+            <span class="t-title">secure_channel.sh</span>
+          </div>
+          <div class="terminal-body">
+            <p class="t-line"><span class="t-prompt">$</span> <span class="t-cmd">gpg --import pubkey.asc</span></p>
+            <p class="t-line"><span class="t-output">gpg: key 0xDEADBEEF: public key imported</span></p>
+            <p class="t-line"><span class="t-output">gpg: Total number processed: 1</span></p>
+            <p class="t-line t-blank">&nbsp;</p>
+            <p class="t-line"><span class="t-prompt">$</span> <span class="t-cmd">gpg --encrypt --recipient contact@votreusername.io</span></p>
+            <p class="t-line"><span class="t-output">[OK] Message chiffré. Canal sécurisé établi.</span></p>
+            <p class="t-line t-blank">&nbsp;</p>
+            <p class="t-line"><span class="t-prompt">$</span> <span class="t-cursor">█</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-logo">THREAT<span class="accent">HUNTER</span></span>
+      <span class="footer-copy">// Construit avec ❤️ et du café // Hébergé sur GitHub Pages</span>
+      <span class="footer-status"><span class="status-dot"></span> ALL SYSTEMS OPERATIONAL</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
