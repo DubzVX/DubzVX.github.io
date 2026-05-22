@@ -2,7 +2,7 @@
   {
     "slug": "mshta-abuse",
     "title": "MSHTA: Beyond Classic Detections - Threat Hunting",
-    "category": "detection",
+    "category": "threathunt",
     "date": "2025-05-21",
     "excerpt": "What standard Sigma rules miss — and how to build high-fidelity threat hunting around a 25-year-old Windows binary",
     "tags": ["MSHTA", "LOLBins", "SentinelOne"],
