@@ -15,7 +15,7 @@
     "category": "malware",
     "date": "2025-05-22",
     "excerpt": "From Static Analysis to Threat Hunting — PyInstaller modification, custom AES loader, and Telegram C2",
-    "tags": ["BlankGrabber", "Malware", "SentinelOne"],
+    "tags": ["BlankGrabber", "Malware"],
     "readtime": "15 min",
     "tldr": ""
   }
