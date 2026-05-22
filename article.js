@@ -27,7 +27,11 @@ async function loadArticle() {
   renderHeader(meta, markdown);
   renderBody(markdown);
   buildToC();
-  hljs.highlightAll();
+
+  // Wait for hljs to be available before highlighting
+  if (typeof hljs !== "undefined") {
+    hljs.highlightAll();
+  }
   addCopyButtons();
   renderNav(slug);
 }
@@ -46,9 +50,21 @@ function renderHeader(meta, markdown) {
 }
 
 function renderBody(markdown) {
+  // Safely check marked is available
+  if (typeof marked === "undefined") {
+    document.getElementById("article-body").innerHTML =
+      `<p style="color:var(--red);font-family:var(--font-mono)">[ERR] Markdown renderer failed to load. Check your internet connection.</p>`;
+    return;
+  }
+
   const renderer = new marked.Renderer();
-  renderer.heading = (text, level) => `<h${level} id="${slugify(text)}">${text}</h${level}>`;
-  document.getElementById("article-body").innerHTML = marked.parse(markdown, { renderer, breaks: true, gfm: true });
+  renderer.heading = ({ text, depth }) => {
+    const id = slugify(typeof text === "string" ? text : text.replace(/<[^>]+>/g,""));
+    return `<h${depth} id="${id}">${text}</h${depth}>`;
+  };
+
+  marked.use({ breaks: true, gfm: true });
+  document.getElementById("article-body").innerHTML = marked.parse(markdown, { renderer });
 }
 
 function buildToC() {
@@ -92,4 +108,9 @@ function showError(msg) {
   document.getElementById("article-header").innerHTML = `<p class="font-mono" style="color:var(--red)">[ERR] ${msg}</p>`;
 }
 
-loadArticle();
+// Wait for DOM + external scripts before running
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", loadArticle);
+} else {
+  loadArticle();
+}
