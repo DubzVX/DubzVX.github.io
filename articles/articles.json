@@ -1,10 +1,10 @@
 [
   {
     "slug": "mshta-abuse",
-    "title": "MSHTA Abuse — Threat Hunting",
+    "title": "MSHTA: Beyond Classic Detections - Threat Hunting",
     "category": "detection",
     "date": "2025-05-21",
-    "excerpt": "Article in progress.",
+    "excerpt": "Article finish",
     "tags": ["MSHTA", "LOLBins", "SentinelOne"],
     "readtime": "10 min",
     "tldr": ""
