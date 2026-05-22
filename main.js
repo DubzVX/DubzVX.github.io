@@ -1,4 +1,4 @@
-const NAME = "RÉMI DubZVX";
+const NAME = "RÉMI DubzVX";
 const el   = document.getElementById("typed-name");
 
 function typeWriter(text, node, delay) {
