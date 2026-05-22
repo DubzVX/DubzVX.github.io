@@ -579,7 +579,7 @@ This analysis reveals a Blank Grabber variant that has meaningfully evolved from
 - The shift from Discord webhooks to Telegram C2 reflects broader ecosystem changes following Discord's enforcement crackdown on abuse
 - The non-standard AES implementation adds a meaningful layer of complexity against automated sandbox decryption pipelines
 - Roblox + crypto wallet targeting confirms a young/gamer demographic as the primary victim profile
-- Despite the original repository being archived since 2023, Blank Grabber remains an active and evolving threat in 2025
+- Despite the original repository being archived since 2023, Blank Grabber remains an active and evolving threat in 2026.
 
 The Sigma and YARA rules provided offer actionable detection coverage across the full kill chain — from initial execution through data packaging and C2 exfiltration.
 
