@@ -50,8 +50,8 @@ Key characteristics:
 |------|-------|
 | 2022 | Blank-c publishes the project on GitHub under an educational disclaimer. Primary targets: Discord tokens, browser passwords, Telegram sessions. |
 | Mid-2023 | Blank-c archives the original repo and transfers the project to a new maintainer (noahmajors), forked under `f4kedre4lity`. Over 300 commits in the following months. |
-| 2024 | Malicious campaigns distribute Blank Grabber via typosquatted PyPI and npm packages. Targets: developers and gamers (Roblox cookies, crypto wallets). Partial analyses published by Datadog, Socket, and Imperva. |
-| 2025 | Splunk documents a loader concealment technique abusing digital certificates. Active fork continues receiving updates. No complete analysis covering the current version is publicly available. |
+| 2024-2025 | Malicious campaigns distribute Blank Grabber via typosquatted PyPI and npm packages. Targets: developers and gamers (Roblox cookies, crypto wallets). Partial analyses published by Datadog, Socket, and Imperva. |
+| 2026 | Splunk documents a loader concealment technique abusing digital certificates. Active fork continues receiving updates. No complete analysis covering the current version is publicly available. |
 
 ---
 
