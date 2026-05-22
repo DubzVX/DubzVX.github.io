@@ -27,7 +27,7 @@ const LINES = [
   { t: "[OK] APT29 TTP signature matched",           d: 4100, type: "ok"   },
   { t: "$ hunt hypothesis confirmed.",               d: 4600, type: "ok"   },
   { t: "$ generating Sigma rule...",                 d: 5000, type: "cmd"  },
-  { t: "[OK] Rule deployed to Splunk ES.",           d: 5500, type: "ok"   },
+  { t: "[OK] Rule deployed to Splunk.",           d: 5500, type: "ok"   },
   { t: "$ █",                                        d: 6000, type: "cursor"},
 ];
 
