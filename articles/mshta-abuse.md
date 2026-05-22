@@ -160,7 +160,6 @@ These rules target patterns with a low false-positive rate in standard enterpris
 
 ```yaml
 title: Office Application Spawning MSHTA
-id: a7c3d2e1-4f5b-6c7d-8e9f-0a1b2c3d4e5f
 status: stable
 description: >
   Detects mshta.exe launched from an Office application.
@@ -198,7 +197,6 @@ level: high
 
 ```yaml
 title: MSHTA Inline VBScript or JavaScript Execution
-id: b8d4e3f2-5g6h-7i8j-9k0l-1m2n3o4p5q6r
 status: stable
 description: >
   Detects mshta.exe executing inline scripts via vbscript: or javascript: URI handlers.
@@ -232,7 +230,6 @@ level: critical
 
 ```yaml
 title: MSHTA Loading Remote HTA Payload
-id: c9e5f4g3-6h7i-8j9k-0l1m-2n3o4p5q6r7s
 status: stable
 description: >
   Detects mshta.exe with a command line containing a URL pointing to a remote resource.
@@ -268,7 +265,6 @@ level: high
 
 ```yaml
 title: MSHTA Spawning Suspicious Child Process
-id: d0f6g5h4-7i8j-9k0l-1m2n-3o4p5q6r7s8t
 status: stable
 description: >
   Detects mshta.exe spawning processes commonly associated with post-exploitation activity.
