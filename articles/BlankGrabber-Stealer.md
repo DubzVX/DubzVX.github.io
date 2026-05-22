@@ -1,4 +1,4 @@
-# Blank Grabber 2025: Anatomy of an Open-Source Stealer That Refuses to Die
+# Blank Grabber 2026: Anatomy of an Open-Source Stealer That Refuses to Die
 ### From Static Analysis to Threat Hunting — PyInstaller modification, custom AES loader, and Telegram C2
 
 > **TL;DR** — Blank Grabber is open-source, actively maintained, and consistently underestimated. This article covers the full kill chain: modified PyInstaller stub, custom AES decryption layer, aggressive Defender bypass, and Telegram-based C2 exfiltration — plus actionable Sigma rules and YARA signatures derived from original analysis.
