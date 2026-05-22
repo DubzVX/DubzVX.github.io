@@ -1,6 +1,6 @@
 function getSlug() { return new URLSearchParams(window.location.search).get("slug"); }
 function formatDate(d) { return new Date(d).toLocaleDateString("en-GB", { day:"2-digit", month:"long", year:"numeric" }); }
-function categoryLabel(cat) { return { writeup:"WRITE-UP", detection:"DETECTION", malware:"MALWARE" }[cat] || cat.toUpperCase(); }
+function categoryLabel(cat) { return { threathunt:"THREAT HUNT", detection:"DETECTION", malware:"MALWARE" }[cat] || cat.toUpperCase(); }
 function slugify(t) { return t.toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/(^-|-$)/g,""); }
 function readTime(text) { return `${Math.max(1,Math.round(text.split(/\s+/).length/200))} min read`; }
 
