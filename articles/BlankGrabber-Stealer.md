@@ -4,7 +4,7 @@
 > **TL;DR** — Blank Grabber is open-source, actively maintained, and consistently underestimated. This article covers the full kill chain: modified PyInstaller stub, custom AES decryption layer, aggressive Defender bypass, and Telegram-based C2 exfiltration — plus actionable Sigma rules and YARA signatures derived from original analysis.
 
 **Author:** DubzVX  
-**Date:** 22 May 2025  
+**Date:** 22 May 2026  
 **Tags:** `malware-analysis` `infostealer` `threat-hunting` `python` `blue-team`  
 **SHA1:** `b059e225abd3c19d337ed6ef5fb43d44d7748ee6`
 
@@ -29,7 +29,7 @@
 
 This accessibility is precisely what makes it a particularly interesting subject of study. Blank Grabber embodies a fundamental trend in the threat landscape: the democratization of offensive tools. No need to purchase access to a MaaS panel or negotiate on an underground forum — a simple repository clone is enough to obtain a functional, GUI-configurable stealer.
 
-**Why it's still relevant in 2025:**
+**Why it's still relevant in 2026:**
 
 Despite the original repository being archived since August 2023, Blank Grabber is far from dead. The active fork receives regular updates, samples continue to surface in security telemetry, and no complete public analysis covers the current version — which is precisely the gap this article addresses.
 
@@ -132,10 +132,6 @@ python pyinstxtractor.py sample.exe
 **Finding #2 — Null bytes in filename (anti-analysis)**
 
 The main entry point contains deliberate null bytes (`\x00`) in its embedded filename — an intentional anti-analysis technique designed to crash automated tools processing filenames as standard strings. pyinstxtractor handles this gracefully via UUID substitution, but less robust tools would fail silently here.
-
-**Finding #3 — Python 3.13**
-
-Use of Python 3.13 is consistent with an actively maintained fork updated in 2024/2025. Older Blank Grabber analyses document Python 3.8–3.10 builds. This version delta matters for tooling: standard decompilers targeting older bytecode formats will silently produce incomplete output.
 
 ---
 
