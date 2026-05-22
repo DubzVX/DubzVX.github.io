@@ -6,7 +6,7 @@
     "date": "2025-05-21",
     "excerpt": "What standard Sigma rules miss — and how to build high-fidelity threat hunting around a 25-year-old Windows binary",
     "tags": ["MSHTA", "LOLBins", "SentinelOne"],
-    "readtime": "10 min",
+    "readtime": "15 min",
     "tldr": ""
   }
 ]
