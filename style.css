@@ -292,11 +292,9 @@ body::before {
   justify-content: center;
   gap: 2rem;
   padding: 1.5rem 2rem;
-  background: var(--bg-2);
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
   flex-wrap: wrap;
-  position: relative;
 }
 .stats-banner::before,
 .stats-banner::after {
