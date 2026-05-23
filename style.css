@@ -283,6 +283,10 @@ body::before {
 
 /* ── STATS BANNER ── */
 .stats-banner {
+  position: relative;
+  background-image: url('images/cowboy.jpg');
+  background-size: cover;
+  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -301,7 +305,14 @@ body::before {
   opacity: 0.3;
   font-size: 1rem;
 }
-.stat-item { display: flex; flex-direction: column; align-items: center; gap: 2px; }
+.stats-banner::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 13, 11, 0.65);
+  z-index: 0;
+}
+.stat-item { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; gap: 2px;   }
 .stat-num { font-family: var(--font-display); font-size: 1.3rem; color: var(--copper); }
 .stat-label { font-family: var(--font-mono); font-size: 0.62rem; color: var(--text-muted); letter-spacing: 0.12em; }
 .stat-sep { color: var(--border-2); font-size: 1.2rem; opacity: 0.5; }
