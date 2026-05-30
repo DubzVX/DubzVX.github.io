@@ -18,5 +18,15 @@
     "tags": ["BlankGrabber", "Malware"],
     "readtime": "15 min",
     "tldr": ""
+  },
+  {
+    "slug": "Bootloaders on Malware",
+    "title": "Malicious Bootloaders on Windows: Anatomy of the Most Persistent Threat",
+    "category": "malware",
+    "date": "2026-05-30",
+    "excerpt": "From MBR Infection to UEFI Implants — Boot Chain Analysis, Secure Boot Bypass, and Detection Rules",
+    "tags": ["Bootloaders", "Malware" ,"bootkit","uefi", "threat-hunting" ],
+    "readtime": "15 min",
+    "tldr": ""
   }
 ]
