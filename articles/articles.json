@@ -32,7 +32,7 @@
     {
     "slug": "gcp-iam-abuse-hunting",
     "title": "GCP IAM Abuse — Hunting",
-    "category": "writeup",
+    "category": "threathunt",
     "date": "2026-07-26",
     "excerpt": "In GCP, attackers don't drop payloads — they call APIs. The same APIs your CI/CD pipelines and Terraform runs call every day. A deep dive into IAM abuse techniques, detection logic, and the blind spots that will get you.",
     "tags": [
