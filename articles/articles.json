@@ -29,4 +29,20 @@
     "readtime": "15 min",
     "tldr": ""
   }
+    {
+    "slug": "gcp-iam-abuse-hunting",
+    "title": "GCP IAM Abuse — Hunting",
+    "category": "writeup",
+    "date": "2026-07-26",
+    "excerpt": "In GCP, attackers don't drop payloads — they call APIs. The same APIs your CI/CD pipelines and Terraform runs call every day. A deep dive into IAM abuse techniques, detection logic, and the blind spots that will get you.",
+    "tags": [
+      "GCP",
+      "IAM",
+      "Cloud Security",
+      "Splunk",
+      "Threat Hunting"
+    ],
+    "readtime": "10 min",
+    "tldr": "IAM is the epicenter of GCP attacks. This article breaks down enumeration, impersonation, persistence via SetIamPolicy, and credential collection — including one confirmed finding from a production hunt."
+  }
 ]
