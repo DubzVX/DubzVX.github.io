@@ -28,7 +28,7 @@
     "tags": ["Bootloaders", "Malware" ,"bootkit","uefi", "threat-hunting" ],
     "readtime": "15 min",
     "tldr": ""
-  }
+  },
     {
     "slug": "gcp-iam-abuse-hunting",
     "title": "GCP IAM Abuse — Hunting",
